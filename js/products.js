@@ -23,6 +23,7 @@ function displayProducts(products) {
         img.src = product.image;
         img.alt = `product: ${product.title}`;
         img.width=250;
+        img.height="auto";
         img.loading = 'lazy'; // Lazy loading for performance
         pictureDiv.appendChild(img);
 
