@@ -232,7 +232,7 @@ section.best-sellers .product-slider .product img {
 }
 
 section.best-sellers .product-slider .product .product-picture {
-    height: 100%;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
