@@ -6,10 +6,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - Tech Shop</title>
-        <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/styles.css">
-        <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
-        <!-- Google Tag Manager -->
+
+        <!-- 1) Preconnect to Google Fonts domains -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- 2) Preload main stylesheet, then load it -->
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap">
+        <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript>
+            <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap" rel="stylesheet">
+        </noscript>
+
+        <link
+            rel="preload"
+            as="style"
+            href="/css/styles.css"
+            onload="this.onload=null;this.rel='stylesheet'"
+            >
+        <noscript>
+            <link rel="stylesheet" href="/css/styles.css">
+        </noscript>
+
+        <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
+        <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8" defer></script>
+        <script type="text/javascript" charset="UTF-8" defer>
+            cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Performance Course"});
+        </script>
+       
+       <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -17,12 +42,7 @@
             })(window,document,'script','dataLayer','GTM-PKK35GL5');
         </script>
         <!-- End Google Tag Manager -->
-
-        <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-        <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
-        <script type="text/javascript" charset="UTF-8">
-            cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Performance Course"});
-        </script>
+        
               
     </head>
 
@@ -206,8 +226,8 @@
          <a href="#" id="open_preferences_center">Update cookies preferences</a>
  
 
-        <script type="text/javascript" src="/js/main.js"></script>
-        <script type="text/javascript" src="/js/products.js"></script>
+        <script type="text/javascript" src="/js/main.js" defer></script>
+        <script type="text/javascript" src="/js/products.js" defer></script>
 
     </body>
 
