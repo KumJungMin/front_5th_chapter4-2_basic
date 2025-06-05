@@ -18,8 +18,9 @@ function displayProducts(products) {
         img.src = product.image;
         img.alt = `product: ${product.title}`;
         img.width = 250;
+        img.height = 250;
         img.loading = 'lazy';
-        img.style.height = 'auto';
+        img.style.objectFit = 'cover';
         pictureDiv.appendChild(img);
 
         const infoDiv = document.createElement('div');
